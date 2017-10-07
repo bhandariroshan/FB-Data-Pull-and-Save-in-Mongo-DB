@@ -53,25 +53,23 @@ To run the code, you need to follow following instructions:-
 		method in the search_events.py file. This document parses every location from the facebook event search api and 
 		parses every result from the facebook api and keeps in the eventSearchResult collection.
 		
-		
 		Ex documents in the collection:-
 		{
-	        "_id" : ObjectId("52987751aa805bd8b83d0d0b"),
-	        "id" : "127923610711605",
-	        "start_time" : "2013-11-27T03:00:00+0000",
-	        "name" : "Robert Stone in Conversation With Rachel Kushner at The Strand",
-	        "location" : "New York, NY, United States"
+			"_id" : ObjectId("52987751aa805bd8b83d0d0b"),
+			"id" : "127923610711605",
+			"start_time" : "2013-11-27T03:00:00+0000",
+			"name" : "Robert Stone in Conversation With Rachel Kushner at The Strand",
+			"location" : "New York, NY, United States"
 		}
-		
+
 		{
-		        "_id" : ObjectId("52987751aa805bd8b83d0d0c"),
-		        "id" : "137004316485839",
-		        "start_time" : "2013-11-27T00:00:00+0000",
-		        "location" : "Brooklyn, NY, United States",
-		        "name" : "Cheap Blue Yonder @ Rubber Tracks - Brooklyn, NY",
-		        "end_time" : "2013-11-27T03:00:00+0000"
+			"_id" : ObjectId("52987751aa805bd8b83d0d0c"),
+			"id" : "137004316485839",
+			"start_time" : "2013-11-27T00:00:00+0000",
+			"location" : "Brooklyn, NY, United States",
+			"name" : "Cheap Blue Yonder @ Rubber Tracks - Brooklyn, NY",
+			"end_time" : "2013-11-27T03:00:00+0000"
 		}
-		
 
 	iv. Note to get events for any location only you can use filters in the mongodb queries.
 
