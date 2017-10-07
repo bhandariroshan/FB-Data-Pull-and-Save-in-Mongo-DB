@@ -74,24 +74,24 @@ To run the code, you need to follow following instructions:-
 	iv. Note to get events for any location only you can use filters in the mongodb queries.
 
 4. To run the facebook places search:-
-	
-	i. First put the latitude and longitude value in the center in the jobs collection. 
-	
-	Ex:- 
-	{
-		"APISecure" : "demo",
-		"State" : "pending",
-		"StateLastChange" : "2013.10.21 14:23",
-		"StateLastProcess" : ISODate("2013-11-30T08:33:44.621Z"),
-		"_id" : 2,
-		"center" : "52.516,13.383",
-		"city" : "berlin,germany",
-		"key" : "01",
-		"name" : "01",
-		"type" : "places"
-	}
 
-	ii. You can use save_job method in the search_places.py file to create new job there:- 
+    i. First put the latitude and longitude value in the center in the jobs collection. 
+    
+    	Ex:- 
+		{
+			"APISecure" : "demo",
+			"State" : "pending",
+			"StateLastChange" : "2013.10.21 14:23",
+			"StateLastProcess" : ISODate("2013-11-30T08:33:44.621Z"),
+			"_id" : 2,
+			"center" : "52.516,13.383",
+			"city" : "berlin,germany",
+			"key" : "01",
+			"name" : "01",
+			"type" : "places"
+		}
+
+ii. You can use save_job method in the search_places.py file to create new job there:- 
 	
 	Ex:- 
 	save_job('
@@ -109,10 +109,10 @@ To run the code, you need to follow following instructions:-
 		}
 	)
 	
+
+iii. To run the places search then you can execute the parse_places_api() method in the search_places.py file
 	
-	iii. To run the places search then you can execute the parse_places_api() method in the search_places.py file
-	
-		Please note that this method takes no query, if you want to execute search for specific topic(like:- "coffee" or "medicine" or "bakery" or "hotels" or "airport" or "taxi" or "book" etc) you have to change the query = '*' filed in the parse_places_api() method in the search_places.py file. The results of the api are saved in the searcPlacesResults collection as:- 
+Please note that this method takes no query, if you want to execute search for specific topic(like:- "coffee" or "medicine" or "bakery" or "hotels" or "airport" or "taxi" or "book" etc) you have to change the query = '*' filed in the parse_places_api() method in the search_places.py file. The results of the api are saved in the searcPlacesResults collection as:- 
 		
 		
 		{
