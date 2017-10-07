@@ -12,20 +12,28 @@ To run the code, you need to follow following instructions:-
 
 2. Settings 
  
- a. Create a facebook app from :- https://developers.facebook.com/apps
+ a. Create a facebook app from :-  https://developers.facebook.com/apps
+ 
  	i.  Get the APP_ID and APP_SECRET and put in the respective values in settings.py file 
+	
 	ii. Run the method get_app_token() and copy the value printed in terminal.
 	   Paste it in the APP_TOKEN= '......here.....' in settings.py file
+	   
  b. For the Facebook Settings:-
+ 
  	i. Generate the temporary access token from here:-
  		https://developers.facebook.com/tools/access_token
 
  	ii. Put this token in the ACCESS_TOKEN ='......here......' variable in the settings.py file.
+	
  	iii. Note that this token is valid only for 1 hour. So you need to generate LONG_LIVED_ACCESS_TOKEN 
+	
  	     by running the get_long_access_token() method of settings.py Please note and copy the value printed 
  		 in the terminal and paste it in the 
  		 LONG_LIVED_ACCESS_TOKEN = '.......here......'
+		 
  3. To run the facebook Event Search
+ 
   	i. First put the place along with its' latitude and longitude value in the place collection of dataface database. 
 	   I have included some sample in the database and it looks something like this:-
 	  	{
